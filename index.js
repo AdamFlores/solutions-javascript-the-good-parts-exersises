@@ -101,3 +101,15 @@ function once(binaryFunction) {
     }
   };
 }
+
+// Problem 14
+function counterf(a) {
+  return {
+    inc: function() {
+        return a += 1;
+      },
+    dec: function() {
+        return a -= 1;
+      }
+  };
+}

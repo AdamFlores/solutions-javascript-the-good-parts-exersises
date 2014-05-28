@@ -96,3 +96,11 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    add_once(3, 4)        // 7
    add_once(3, 4)        // throw!
    ```
+
+14. Write a factory function that returns two functions that implement an up/down counter.
+
+   ```javascript
+   counter = counterf(10);
+   counter.inc()    // 11
+   counter.dec()    // 10
+   ```
