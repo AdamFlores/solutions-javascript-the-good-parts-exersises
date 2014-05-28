@@ -92,12 +92,12 @@ function composeb(binaryFunction1, binaryFunction2) {
 // Problem 13
 function once(binaryFunction) {
   var calledOnce = false;
-  return function(a, b) {
+  return function() {
     if(calledOnce) {
       throw('throw!');
     } else {
       calledOnce = true;
-      return binaryFunction(a, b);
+      return binaryFunction.apply(this, arguments);
     }
   };
 }

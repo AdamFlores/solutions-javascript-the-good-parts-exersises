@@ -89,7 +89,7 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    composeb(add, mul)(2, 3, 5)  // 25
    ```
 
-13. Write once, a function which takes a binary function and returns a function that can only be called once.
+13. Write once, a function which takes a function and returns a function that can only be called once.
 
    ```javascript
    add_once = once(add);
