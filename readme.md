@@ -33,7 +33,7 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
 
    ```javascript
    addf = applyf(add);
-   addf(3)(4)          // 7
+   addf(3)(4)         // 7
 
    applyf(mul)(5)(6)  // 30
    ```
@@ -45,4 +45,11 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    add3(4)               // 7
 
    curry(mul, 5)(6)      // 30
+   ```
+
+7. Without creating any new functions, show three ways to create the inc function.
+
+   ```javascript
+   inc(5)       //6
+   inc(inc(5))  //7
    ```

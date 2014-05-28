@@ -39,3 +39,7 @@ function curry(binaryFunction, a) {
 function curry(binaryFunction, a) {
   return applyf(binaryFunction)(a);
 }
+
+inc = addf(1);
+inc = applyf(add)(1);
+inc = curry(add, 1);
