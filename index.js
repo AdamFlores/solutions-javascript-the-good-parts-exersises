@@ -71,3 +71,13 @@ function twice(binaryFunction) {
     return binaryFunction(a, a);
   };
 }
+
+var double = twice(add);
+var square = twice(mul);
+
+// Problem 11
+function composeu(unaryFunction1, unaryFunction2) {
+  return function(a) {
+    return unaryFunction2(unaryFunction1(a));
+  };
+}

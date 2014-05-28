@@ -76,3 +76,9 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    var square = twice(mul);
    square(11)    // 121
    ```
+
+11. Write composeu, a function which takes two unary functions and returns a unary function that calls them both.
+
+   ```javascript
+   composeu(double, square)(3)  // 36
+   ```
