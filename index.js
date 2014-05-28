@@ -88,3 +88,16 @@ function composeb(binaryFunction1, binaryFunction2) {
     return binaryFunction2(binaryFunction1(a, b), c);
   };
 }
+
+// Problem 13
+function once(binaryFunction) {
+  var calledOnce = false;
+  return function(a, b) {
+    if(calledOnce) {
+      throw('throw!');
+    } else {
+      calledOnce = true;
+      return binaryFunction(a, b);
+    }
+  };
+}
