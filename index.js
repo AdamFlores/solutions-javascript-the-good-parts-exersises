@@ -29,3 +29,9 @@ function applyf(binaryFunction) {
     };
   };
 }
+
+function curry(binaryFunction, a) {
+  return function(b) {
+    return binaryFunction(a, b);
+  };
+}
