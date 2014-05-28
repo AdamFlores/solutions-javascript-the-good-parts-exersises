@@ -21,3 +21,11 @@ function addf(a) {
     return a + b;
   };
 }
+
+function applyf(functionToApply) {
+  return function(a) {
+    return function(b) {
+      return functionToApply(a, b);
+    };
+  };
+}

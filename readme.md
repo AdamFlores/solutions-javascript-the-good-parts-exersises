@@ -28,3 +28,11 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    ```javascript
    addf(3)(4) // 7
    ```
+
+5. Write a function that takes a binary function, and makes it callable with two invocations.
+
+   ```javascript
+   addf = applyf(add);
+   addf(3)(4)          // 7
+   applyf(mul)(5)(6)  // 30
+   ```
