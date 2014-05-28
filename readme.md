@@ -60,3 +60,9 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    Number.prototype.add = methodize(add);
    (3).add(4)    // 7
    ```
+
+9. Write demethodize, a function that converts a method to a binary function.
+
+   ```javascript
+   demethodize(Number.prototype.add)(5, 6)  // 11
+   ```

@@ -57,3 +57,10 @@ function methodize(binaryFunction) {
     return binaryFunction(this, b);
   };
 }
+
+// Problem 9
+function demethodize(method) {
+  return function(a, b) {
+    return method.call(a, b);
+  };
+}
