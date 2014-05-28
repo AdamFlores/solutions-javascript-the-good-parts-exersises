@@ -82,3 +82,9 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    ```javascript
    composeu(double, square)(3)  // 36
    ```
+
+12. Write comboseb, a function which takes two binary functions and returns a function that calls them both.
+
+   ```javascript
+   composeb(add, mul)(2, 3, 5)  // 25
+   ```

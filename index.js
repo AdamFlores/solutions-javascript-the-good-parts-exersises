@@ -81,3 +81,10 @@ function composeu(unaryFunction1, unaryFunction2) {
     return unaryFunction2(unaryFunction1(a));
   };
 }
+
+// Problem 12
+function composeb(binaryFunction1, binaryFunction2) {
+  return function(a, b, c) {
+    return binaryFunction2(binaryFunction1(a, b), c);
+  };
+}
