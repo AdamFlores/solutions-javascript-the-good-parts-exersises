@@ -113,3 +113,21 @@ function counterf(a) {
       }
   };
 }
+
+// Problem 15
+function revocable(f) {
+  var revoked = false;
+  var that = this;
+  return {
+    invoke: function() {
+        if(! revoked) {
+          return f.apply(that, arguments);
+        } else {
+          throw('throw!');
+        }
+      },
+    revoke: function() {
+        revoked = true;
+      }
+  };
+}

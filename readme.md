@@ -104,3 +104,12 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    counter.inc()    // 11
    counter.dec()    // 10
    ```
+
+15. Make a revocable function that takes a nice function, and returns a revoke function that denies access to the nice function, and an invoke function that can invoke the nice function until the nice funciton is revoked.
+
+   ```javascript
+   temp = revocable(alert);
+   temp.invoke(7);          // alert: 7
+   temp.revoke();
+   temp.invoke(8);          // throw!
+   ```
