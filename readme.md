@@ -53,3 +53,10 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    inc(5)       //6
    inc(inc(5))  //7
    ```
+
+8. Write methodize, a function which converts a binary function to a method.
+
+   ```javascript
+   Number.prototype.add = methodize(add);
+   (3).add(4)    // 7
+   ```

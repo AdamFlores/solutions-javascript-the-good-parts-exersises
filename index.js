@@ -50,3 +50,10 @@ function curry(binaryFunction, a) {
 inc = addf(1);
 inc = applyf(add)(1);
 inc = curry(add, 1);
+
+// Problem 8
+function methodize(binaryFunction) {
+  return function(b) {
+    return binaryFunction(this, b);
+  };
+}
