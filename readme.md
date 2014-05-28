@@ -22,3 +22,9 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    idf = identityf(3);
    idf()   // 3
    ```
+
+4. Write a function that adds from two invocations
+
+   ```javascript
+   addf(3)(4) // 7
+   ```
