@@ -35,3 +35,7 @@ function curry(binaryFunction, a) {
     return binaryFunction(a, b);
   };
 }
+
+function curry(binaryFunction, a) {
+  return applyf(binaryFunction)(a);
+}
