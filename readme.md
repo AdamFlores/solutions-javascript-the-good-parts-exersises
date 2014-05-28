@@ -11,7 +11,14 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
 
 2. Write two binary functions, add and mul, that take two numbers and return their sum and their product.
 
-   ``javascript
+   ```javascript
    add(3, 4) // 7
    mul(3, 4) // 12
+   ```
+
+3. Write a function that takes an argument and returns a function that returns that argument.
+
+   ```javascript
+   idf = identityf(3);
+   idf()   // 3
    ```
