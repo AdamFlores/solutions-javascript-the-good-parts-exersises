@@ -22,10 +22,10 @@ function addf(a) {
   };
 }
 
-function applyf(functionToApply) {
+function applyf(binaryFunction) {
   return function(a) {
     return function(b) {
-      return functionToApply(a, b);
+      return binaryFunction(a, b);
     };
   };
 }
