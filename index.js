@@ -64,3 +64,10 @@ function demethodize(method) {
     return method.call(a, b);
   };
 }
+
+// Problem 10
+function twice(binaryFunction) {
+  return function(a) {
+    return binaryFunction(a, a);
+  };
+}

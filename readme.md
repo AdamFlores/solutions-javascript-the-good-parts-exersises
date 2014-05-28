@@ -66,3 +66,13 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    ```javascript
    demethodize(Number.prototype.add)(5, 6)  // 11
    ```
+
+10. Write twice, a function which takes a binary function and returns a unary function that passes its argument to the binary function twice.
+
+   ```javascript
+   var double = twice(add);
+   double(11)    // 22
+
+   var square = twice(mul);
+   square(11)    // 121
+   ```
