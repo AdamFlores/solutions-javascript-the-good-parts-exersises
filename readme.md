@@ -8,3 +8,10 @@ These are my solutions to the problems from "Javascript the Good Parts" Pluralsi
    ```javascript
    identity(3) // 3
    ```
+
+2. Write two binary functions, add and mul, that take two numbers and return their sum and their product.
+
+   ``javascript
+   add(3, 4) // 7
+   mul(3, 4) // 12
+   ```
