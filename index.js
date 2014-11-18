@@ -43,12 +43,9 @@ function applyf(binaryFunction) {
 
 // Problem 6
 function curry(binaryFunction, a) {
-  return function(b) {
-    return binaryFunction(a, b);
-  };
-}
-
-function curry(binaryFunction, a) {
+  // return function(b) {
+  //   return binaryFunction(a, b);
+  // };
   return applyf(binaryFunction)(a);
 }
 
