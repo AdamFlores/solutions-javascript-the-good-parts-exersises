@@ -13,9 +13,12 @@ function mul(a, b) {
 }
 
 // Problem 3
-function identifyf(a) {
+function identityf(a) {
+  // return function() {
+  //   return a;
+  // };
   return function() {
-    return a;
+    return identity(a);
   };
 }
 
