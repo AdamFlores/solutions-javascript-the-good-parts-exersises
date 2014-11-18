@@ -24,8 +24,11 @@ function identityf(a) {
 
 // Problem 4
 function addf(a) {
+  // return function(b) {
+  //   return a + b;
+  // };
   return function(b) {
-    return a + b;
+    return add(a, b);
   };
 }
 
